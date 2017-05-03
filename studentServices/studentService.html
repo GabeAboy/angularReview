@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="boyController.js" charset="utf-8"></script>
+
+  <script src="service.js" charset="utf-8"></script>
+
+  <title>Document</title>
+</head>
+<body ng-app='students'>
+  <div ng-controller='GirlController'>
+    <p>list of Girls</p>
+    {{girl}}
+    <input type="text"ng-model='girl'>
+    <button type="button" name="button" ng-click='addGirl()'>Add Girl</button>
+  </div>
+  <div ng-controller='BoyController'>
+    <p>list of Boy</p>
+    {{boy}}
+    <input type="text"ng-model='boy'>
+    <button type="button" name="button" ng-click='addBoy()'>Add Boy</button>
+  </div>
+
+  <div ng-controller="DisplayController">
+
+    <button ng-click='displayStudents()'>Display</button>
+  </div>
+</body>
+</html>
