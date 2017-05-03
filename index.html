@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+
+  <title>HelloWorld</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+</head>
+<body >
+  <div ng-init='num1=1;num2=2'></div>
+  <div>
+    Enter input <input type="number"ng-model='num1'>
+  </div>
+  <div>
+    Enter input <input type="number"ng-model='num2'>
+  </div>
+  <p>total {{num1+num2 | currency}}</p>
+</body>
+</html>
