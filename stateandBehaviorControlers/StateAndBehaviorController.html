@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="HelloController.js" charset="utf-8"></script>
+</head>
+<body>
+  <div ng-app='hello' ng-controller = 'HelloController as hello'>
+
+    <p>Hello {{entity}}!</p>
+
+    <div>
+      <button ng-click='generateRandomEntity()'>Genderare Random Entity for greet</button>
+    </div>
+    <div>
+      <button ng-click="generateSpecificEntity('Donald Trump')">Greet Donald Trump</button>
+    </div>
+    <div>
+      <button ng-click="generateSpecificEntity('Hillary Clinton')">Greet Hillary Clinton</button>
+    </div>
+    <div>
+      <p>Or Someone else?</p><input ng-model="customPerson">
+      <button ng-click="generateSpecificEntity(customPerson)">Greett</button>
+    </div>
+  </div>
+
+</body>
+</html>
