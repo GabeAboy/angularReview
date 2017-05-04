@@ -1,4 +1,4 @@
-var studentApp = angular.module('students',['studentService']);
+ var studentApp = angular.module('students',['studentService']);
 
 studentApp.controller('GirlController',
   ['$scope','StudentService',function($scope,ss) {
