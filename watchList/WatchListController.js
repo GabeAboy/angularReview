@@ -1,5 +1,7 @@
-angular.module('watch', [])
-.controller('WatchController', function($scope) {
+var app = angular.module('watch', []);
+
+app
+.controller('WatchController',['$scope', function($scope) {
     // Watch count = 2
     $scope.morningGreeting = 'Good morning!';
     $scope.afternoonGreeting = 'Good afternoon!';
@@ -21,5 +23,5 @@ angular.module('watch', [])
     // Watch count = 10 (user defined watch)
     $scope.$watch('customGreeting', function() {
         $scope.customGreetingCounter++;
-    })
-});
+    });
+}]);
