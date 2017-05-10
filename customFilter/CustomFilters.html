@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Custom Filters</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="CustomFiltersController.js"></script>
+</head>
+<body>
+<div ng-app="filters" ng-controller="CustomFiltersController">
+    <h4>Vowel Stripper</h4>
+    Original: {{'How are you?'}}
+    <br>
+    Stripped: {{'How are you?' | vowelStripper}}
+
+    <h4>Vowel And Other Characters Stripper</h4>
+    Original: {{'How are you? I am doing really well.'}}
+    <br>
+    Stripped: {{'How are you? I am doing really well.' | vowelStripper : 'l'}}
+</div>
+</body>
+</html>
